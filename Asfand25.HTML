@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid-gap and rows</title>
+    <style>
+        .grid{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-rows: 2fr 3fr 5fr;
+            grid-auto-rows: 4fr;
+            /* grid-template-columns: 2fr 3fr; */
+            grid-template-columns: repeat(3, 2fr);
+        }
+        .item{
+            background-color: red;
+            border: 2px solid black;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="grid">
+        <div class="item">this is abox1</div>
+        <div class="item">this is abox2</div>
+        <div class="item">this is abox3</div>
+        <div class="item">this is abox4</div>
+        <div class="item">this is abox5</div>
+        <div class="item">this is abox6</div>
+        <div class="item">this is abox7</div>
+        <div class="item">this is abox8</div>
+        <div class="item">this is abox9</div>
+        <div class="item">this is abox10</div>
+    </div>
+</body>
+</html>
